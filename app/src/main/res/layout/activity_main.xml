@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Log in to continue!"
+        android:textColor = "@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize = "30sp"
+
+        />
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        app:backgroundTint = "@color/white"
+        android:text = "Email or Username"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf ="@id/loginText"
+        app:layout_constraintEnd_toEndOf="@id/loginText"
+        app:layout_constraintTop_toBottomOf="@id/loginText"
+
+
+        />
+
+    <EditText
+        android:id="@+id/plain_text_input2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        app:backgroundTint = "@color/white"
+        android:text = "Password"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf ="@id/plain_text_input"
+        app:layout_constraintEnd_toEndOf="@id/plain_text_input"
+        app:layout_constraintTop_toBottomOf="@id/plain_text_input"
+
+
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        app:backgroundTint = "@color/green"
+        android:textColor = "@color/white"
+        app:layout_constraintStart_toStartOf ="@id/plain_text_input2"
+        app:layout_constraintEnd_toEndOf="@id/plain_text_input2"
+        app:layout_constraintTop_toBottomOf="@id/plain_text_input2"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
